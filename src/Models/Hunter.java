@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Hunter extends Mob implements Singable {
     private ArrayList<Crow> crows;
-
     public Hunter(String name, int health, Environment env) {
         super(name, health, env);
         this.crows = new ArrayList<>();

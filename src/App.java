@@ -5,6 +5,7 @@ import Models.Crow;
 import Models.Environment;
 import Models.Hunter;
 import Models.InvalidActionException;
+import Models.Position;
 
 public class App {
     public static void main(String[] args) {
@@ -13,10 +14,10 @@ public class App {
             Cannibal ogre = new Cannibal("Ogre", 100, Environment.CASTLE);
 
             System.out.println(valkom.checkPlace());
-            ogre.move(Environment.FOREST);
+            ogre.move(Environment.FOREST,new Position(1,1));
             ogre.sing();
             System.out.println(ogre.checkPlace());
-            valkom.move(Environment.FOREST);
+            valkom.move(Environment.FOREST,new Position(1,1));
             valkom.sing();
             System.out.println(valkom.checkPlace());
             Random random = new Random();
